@@ -80,8 +80,8 @@ function Projects() {
             <ProjectCard
               imgPath={kanban}
               isBlog={false}
-              title="kanban"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Kanban Board"
+              description="A simple Kanban board application built with React that allows users to create, manage, and track tasks using a drag-and-drop interface. Users can create boards, add columns, and move tasks between columns to visualize their workflow."
               ghLink="https://github.com/mathesh4193/Kanban-Board"
               demoLink="https://kanban-board44.netlify.app/" 
             />

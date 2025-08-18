@@ -53,7 +53,7 @@ function Certification() {
               title="Trust and Security with Google Cloud Certificate"
 
               description="Google Cloud ensures trust by providing enterprise-grade security and compliance."
-              issuer="Backend Masters"
+              issuer="Simplilearn"
               date="jun 2025"
               credentialId="bvCpFgZ0TVb"
               certLink="https://simpli-web.app.link/e/bvCpFgZ0TVb"
