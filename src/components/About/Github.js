@@ -1,17 +1,14 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 function Github() {
-  // Generate a cache-busting query parameter
-  const timestamp = new Date().getTime();
-
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-         My <strong className="purple">Github</strong>
-
+        My <strong className="purple">Github</strong>
       </h1>
+
       <GitHubCalendar
         username="mathesh4193"
         blockSize={15}

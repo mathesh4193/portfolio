@@ -8,7 +8,8 @@ import hostel from "../../Assets/Projects/hostel.png";
 import recipe from "../../Assets/Projects/RecipeApp.png";
 import memory from "../../Assets/Projects/memory.png";
 import kanban from "../../Assets/Projects/kanban.png";
-import portfolio from "../../Assets/Projects/portfolio.png"; 
+import portfolio from "../../Assets/Projects/portfolio.png";
+import flight from "../../Assets/Projects/flight.png"; // Add this if missing
 
 function Projects() {
   return (
@@ -22,7 +23,8 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={hostel}
               isBlog={false}
@@ -32,14 +34,15 @@ function Projects() {
               demoLink="https://hostel-management-vcet.netlify.app/"
             />
           </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={income}
               isBlog={false}
               title="Income Expense Calculator"
-              description="This is a responsive web application built using HTML, CSS, and JavaScript that allows users to track their income and expenses easily. It stores data in the browser using LocalStorage, so user data persists even after closing or refreshing the page."
+              description="A responsive app built with HTML, CSS, and JavaScript to track income and expenses with persistent data storage using LocalStorage."
               ghLink="https://github.com/mathesh4193/Income-Expense-Calculator"
-              demoLink="https://incomeexpo.netlify.app//"
+              demoLink="https://incomeexpo.netlify.app/"
             />
           </Col>
 
@@ -48,7 +51,7 @@ function Projects() {
               imgPath={recipe}
               isBlog={false}
               title="Recipe App"
-              description="Developed a dynamic recipe application using React.js, TailwindCSS, and Axios with TheMealDB API, featuring search, filters, detailed recipe view, and favorites with localStorage persistence."
+              description="A dynamic recipe app built with React, TailwindCSS, and Axios using TheMealDB API, featuring search, filters, detailed views, and favorites saved in LocalStorage."
               ghLink="https://github.com/mathesh4193/recipe-app"
               demoLink="https://recipe-app44.netlify.app/"
             />
@@ -59,9 +62,9 @@ function Projects() {
               imgPath={movie}
               isBlog={false}
               title="Movie Search App"
-              description="A full-featured movie search application built with React that integrates with the OMDB API. Users can search for movies, view detailed information, and manage a list of favorites."
+              description="A React-based movie search app integrating OMDB API for detailed movie info, search, and favorites management."
               ghLink="https://github.com/Mathesh4193/movie_search_app"
-              demoLink="https://movieser.netlify.app/"              
+              demoLink="https://movieser.netlify.app/"
             />
           </Col>
 
@@ -70,7 +73,7 @@ function Projects() {
               imgPath={memory}
               isBlog={false}
               title="Memory Game"
-              description="Built a responsive Memory Game using HTML, CSS, and JavaScript with card flipping, shuffle, pair-matching logic, and restart functionality."
+              description="A fun memory card-matching game built using HTML, CSS, and JavaScript with shuffle, flip, match logic, and restart options."
               ghLink="https://github.com/mathesh4193/Memory-Game-Task"
               demoLink="https://memorygamemini.netlify.app/"
             />
@@ -81,37 +84,38 @@ function Projects() {
               imgPath={kanban}
               isBlog={false}
               title="Kanban Board"
-              description="A simple Kanban board application built with React that allows users to create, manage, and track tasks using a drag-and-drop interface. Users can create boards, add columns, and move tasks between columns to visualize their workflow."
+              description="A React-based Kanban board to organize tasks with drag-and-drop support, task creation, status columns, and workflow visualization."
               ghLink="https://github.com/mathesh4193/Kanban-Board"
-              demoLink="https://kanban-board44.netlify.app/" 
+              demoLink="https://kanban-board44.netlify.app/"
             />
           </Col>
+
           <Col md={4} className="project-card">
-              <ProjectCard
+            <ProjectCard
               imgPath={portfolio}
               isBlog={false}
-              title="Mathesh portfolio"
-              description="Built a responsive personal portfolio website using React and Tailwind CSS to showcase projects, skills, and contact details with a modern, optimized design."
+              title="Mathesh Portfolio"
+              description="A modern personal portfolio built with React and Tailwind CSS to showcase skills, projects, and contact information."
               ghLink=""
               demoLink=""
-              />
+            />
           </Col>
 
-          <col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={flight}
               isBlog={false}
               title="Flight Booking System"
-              description="A full-stack flight booking system where users can search flights, check availability, book tickets, manage bookings, and receive confirmation notifications."
+              description="A full-stack flight booking system enabling users to search flights, check availability, book tickets, and manage reservations with real-time confirmation."
               ghLink="https://github.com/mathesh4193/Mathesh_client_flight"
               demoLink="https://matheshflight.netlify.app/"
             />
-          </col>
-
+          </Col>
 
         </Row>
       </Container>
     </Container>
   );
 }
+
 export default Projects;
