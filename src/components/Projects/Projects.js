@@ -86,7 +86,6 @@ function Projects() {
               demoLink="https://kanban-board44.netlify.app/" 
             />
           </Col>
-
           <Col md={4} className="project-card">
               <ProjectCard
               imgPath={portfolio}
@@ -102,5 +101,4 @@ function Projects() {
     </Container>
   );
 }
-
 export default Projects;
