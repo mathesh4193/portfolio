@@ -96,6 +96,19 @@ function Projects() {
               demoLink=""
               />
           </Col>
+
+          <col md={4} className="project-card">
+            <ProjectCard
+              imgPath={flight}
+              isBlog={false}
+              title="Flight Booking System"
+              description="A full-stack flight booking system where users can search flights, check availability, book tickets, manage bookings, and receive confirmation notifications."
+              ghLink="https://github.com/mathesh4193/Mathesh_client_flight"
+              demoLink="https://matheshflight.netlify.app/"
+            />
+          </col>
+
+
         </Row>
       </Container>
     </Container>

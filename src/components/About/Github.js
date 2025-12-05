@@ -19,17 +19,6 @@ function Github() {
         color="#c084f5"
         fontSize={16}
       />
-
-      <Col md={8} style={{ marginTop: "30px", textAlign: "center" }}>
-        <Card className="p-3 shadow rounded">
-          <h2 className="purple">LeetCode Progress</h2>
-          <img
-            src={`https://leetcard.jacoblin.cool/913122104084-MatheshM?theme=dark&font=Baloo%202&ext=heatmap&t=${timestamp}`}
-            alt="LeetCode Stats"
-            style={{ maxWidth: "100%", borderRadius: "12px" }}
-          />
-        </Card>
-      </Col>
     </Row>
   );
 }
